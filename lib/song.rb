@@ -53,7 +53,7 @@ class Song
     song
   end
   
-  def create_from_filename(filename)
+  def self.create_from_filename(filename)
     artist_and_song = filename.split(" - ")
     artist_and_song[1].slice! ".mp3"
     artist_name = artist_and_song[0]
