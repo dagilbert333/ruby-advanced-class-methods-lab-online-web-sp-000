@@ -46,7 +46,7 @@ class Song
     
     artist_and_song = filename.split(" - ")
     artist_and_song[1].slice! ".mp3"
-    artist_and_song
+    song_name = artist_and_song
   end
   
   def save
