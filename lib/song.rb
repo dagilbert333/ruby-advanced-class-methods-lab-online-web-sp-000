@@ -48,6 +48,7 @@ class Song
     artist_and_song[1].slice! ".mp3"
     artist_name = artist_and_song[0]
     song_name = artist_and_song[1]
+    song = self.new
   end
   
   def save
