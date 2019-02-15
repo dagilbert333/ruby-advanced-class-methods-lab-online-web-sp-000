@@ -54,14 +54,8 @@ class Song
   end
   
   def self.create_from_filename(filename)
-    artist_and_song = filename.split(" - ")
-    artist_and_song[1].slice! ".mp3"
-    artist_name = artist_and_song[0]
-    song_name = artist_and_song[1]
-    song = self.new
-    song.artist_name = artist_name
-    song.name = song_name
-    song.save
+    create = self.new_from_filename
+    create.save
   end
   
   def save
