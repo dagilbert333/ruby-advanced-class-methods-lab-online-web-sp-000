@@ -50,7 +50,7 @@ class Song
     song_name = artist_and_song[1]
     song = self.new
     song.artist_name = artist_name
-    song.
+    song.song = song_name
   end
   
   def save
